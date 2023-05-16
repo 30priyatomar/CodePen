@@ -1,12 +1,14 @@
 import React from 'react'
 import { PrimaryNav, MenuLink, Menu, Hamburger } from './NavElement'
 import logo from '../Home/logo.png'
+import { Link } from 'react-router-dom';
+
 const Navbar = () => {
   return (
     <>
       <PrimaryNav style={{border: '1px solid grey',borderRadius: '3px'}}>
         <Hamburger />
-    <a href='https://cginfinity.com/'>
+    {/* <a href='/'>
         <img src={logo}  style={{
            
             height: 60,
@@ -16,11 +18,16 @@ const Navbar = () => {
             
             
           }} alt='logo' />
-    </a>
+    </a> */}
+
+
+<Link to="/" >
+  <img src={logo} style={{ height: 60,
+            width: 180,
+            paddingTop:20 }} alt="Image" />
+</Link>
+
         <Menu>
-          <MenuLink to="/homepage" activeStyle style={{color:'black' ,fontWeight:'bold', fontSize:20}}>
-            HomePage
-          </MenuLink>
           <MenuLink to="/about" activeStyle style={{color:'black',fontWeight:'bold', fontSize:20}}>
             About
           </MenuLink>
