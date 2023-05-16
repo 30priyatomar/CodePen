@@ -47,7 +47,6 @@ const EditorComponent = (props) => {
             // height="400"
             automaticLayout={true}
             language={lang}
-            theme="vs-dark"
             value={code}
             options={options}
             editorDidMount={editorDidMount}

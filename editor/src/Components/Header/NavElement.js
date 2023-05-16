@@ -8,11 +8,13 @@ export const PrimaryNav = styled.nav`
   background: #ffffff;
   justify-content: space-between;
   padding: 0.18rem calc((100vw - 1000px) / 2);
+
 `
 export const MenuLink = styled(Link)`
   color: #fff;
   display: flex;
   cursor: pointer;
+  
   align-items: center;
   text-decoration: none;
   padding: 0 1.2rem;
@@ -26,6 +28,7 @@ export const Hamburger = styled(FaBars)`
   color: #ffffff;
   @media screen and (max-width: 768px) {
     display: block;
+    
     font-size: 1.9rem;
     top: 0;
     right: 0;

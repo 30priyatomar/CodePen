@@ -4,7 +4,7 @@ import logo from '../Home/logo.png'
 const Navbar = () => {
   return (
     <>
-      <PrimaryNav>
+      <PrimaryNav style={{border: '1px solid grey',borderRadius: '3px'}}>
         <Hamburger />
     <a href='https://cginfinity.com/'>
         <img src={logo}  style={{
@@ -18,8 +18,8 @@ const Navbar = () => {
           }} alt='logo' />
     </a>
         <Menu>
-          <MenuLink to="/home" activeStyle style={{color:'black' ,fontWeight:'bold', fontSize:20}}>
-            Home
+          <MenuLink to="/homepage" activeStyle style={{color:'black' ,fontWeight:'bold', fontSize:20}}>
+            HomePage
           </MenuLink>
           <MenuLink to="/about" activeStyle style={{color:'black',fontWeight:'bold', fontSize:20}}>
             About
@@ -31,7 +31,7 @@ const Navbar = () => {
             Blog
           </MenuLink>
           <MenuLink to="/signIn" activeStyle style={{color:'black' ,fontWeight:'bold', fontSize:20}}>
-            SignIn
+            Sign In
           </MenuLink>
         </Menu>
       </PrimaryNav>
