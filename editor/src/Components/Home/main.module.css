@@ -1,11 +1,12 @@
 .home {
-    background: #000000bf;
+    background: #8b985dbf;
     text-align: center;
-    padding: 5% 0%;
+    padding: 7% 0%;
+    
 }
 
 .home > * {
-    color: white;
+    color: rgb(27, 23, 23);
 }
 
 .home h1 {
@@ -26,4 +27,5 @@
 
 .btn {
     padding: 1% 3%;
+    
 }

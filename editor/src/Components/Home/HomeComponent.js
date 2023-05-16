@@ -6,11 +6,13 @@ const HomeComponent = props => {
     const { createId } = props;
     return (
         <div className={styles.home}>
-            <h1>Peer Share</h1>
-            <p className={styles.heading}>Pair programming with peers</p>
-            <p className={styles.description}>An online code editor for pair programming, interviews, teaching and much more...</p>
+            <h1>CodePen ✏️</h1>
+            <p className={styles.heading}>Collaborative code platform</p>
+            <p className={styles.description}>Enter room to start</p>
             <Link to={`/${createId()}`}>
-                <button className={`${styles.btn} btn_primary`}>Start Coding</button>
+                <div style={{margin:'60px 10px 10px 10px'}} >
+                <button className={`${styles.btn} btn_primary`}>Enter Room</button>
+                </div>
             </Link>
         </div>
     );
