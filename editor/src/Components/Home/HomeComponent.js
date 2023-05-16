@@ -10,7 +10,9 @@ const HomeComponent = props => {
             <p className={styles.heading}>Collaborative code platform</p>
             <p className={styles.description}>Enter room to start</p>
             <Link to={`/${createId()}`}>
+                <div style={{margin:'60px 10px 10px 10px'}} >
                 <button className={`${styles.btn} btn_primary`}>Enter Room</button>
+                </div>
             </Link>
         </div>
     );
